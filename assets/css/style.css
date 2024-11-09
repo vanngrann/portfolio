@@ -546,11 +546,11 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 
-/* Portfolio - Responsive Videos and Images */
+/* For responsive video sizing */
 .responsive-video {
   width: 100%;
   height: auto;
-  max-width: 100%;  /* Ensure content doesn't exceed the container's width */
+  max-width: 100%;  /* Ensures content doesn't exceed the container's width */
   display: block;
   margin: 0 auto;
 }
@@ -560,10 +560,18 @@ section {
   width: 100%;
   height: 0;
   padding-bottom: 56.25%; /* Aspect ratio 16:9 (height / width * 100) */
-  margin-bottom: 20px; /* Adds space below videos */
+  margin-bottom: 10px; /* Adds space below videos */
 }
 
 .iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe-container img {
   position: absolute;
   top: 0;
   left: 0;
@@ -582,11 +590,17 @@ section {
 }
 
 .portfolio img, .portfolio iframe {
-  margin-bottom: 20px; /* Adds space below images/iframes */
+  margin-bottom: 40px; /* Adds space below images/iframes */
 }
 
 .portfolio .section-title {
   margin-bottom: 30px; /* Adds space below section title */
+}
+
+.portfolio .description {
+  margin-top: 5px; /* Adds space above the description */
+  margin-bottom: 5px; /* Adds space below the description */
+  font-size: 15px; /* Adjust font size if needed */
 }
 
 .portfolio .description a {
@@ -699,6 +713,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+.portfolio h4 {
+  margin-top: 30px; /* Add space above each heading */
+  margin-bottom: 10px; /* Add space below the heading */
+}
 
 .portfolio-details {
   padding-top: 40px;
