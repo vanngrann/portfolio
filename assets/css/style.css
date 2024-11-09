@@ -304,6 +304,7 @@ section {
 
 .section-title {
   padding-bottom: 30px;
+  color: #666;
 }
 
 .section-title h2 {
@@ -417,8 +418,35 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.skill-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5em 0;
+}
+
+.skill-name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #3a3a3a;
+}
+
+.skill-level {
+  font-style: italic;
+  color: #1a73e8;
+}
+
+.skill-description {
+  margin-top: 0.2em;
+  color: #666;
+}
+
 .skills .progress {
   height: 60px;
   display: block;
@@ -735,6 +763,7 @@ section {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+  color: #666;
 }
 
 /*--------------------------------------------------------------
